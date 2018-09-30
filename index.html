@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>JustBusTimes CMS - скрипт расписания городского транспорта с картой маршрутов</title>
+	<meta name="description" content="Удобная CMS для создания расписания общественного транспорта в вашем городе" />
+	
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/base.css" />
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/media.queries.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/tipsy.css" />
+	<link rel="stylesheet" type="text/css" href="javascripts/fancybox/jquery.fancybox-1.3.4.css" />
+	<!--link rel="stylesheet" type="text/css" href="://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Quicksand:400,700,300"-->
+	
+	<!-- Javascripts -->
+	<script type="text/javascript" src="javascripts/jquery-1.7.1.min.js"></script>
+	<!--script type="text/javascript" src="javascripts/jquery-2.1.0.min.js"></script-->
+	<script type="text/javascript" src="javascripts/html5shiv.js"></script>
+	<script type="text/javascript" src="javascripts/jquery.tipsy.js"></script>
+	<script type="text/javascript" src="javascripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="javascripts/fancybox/jquery.easing-1.3.pack.js"></script>
+	<script type="text/javascript" src="javascripts/jquery.touchSwipe.js"></script>
+	<script type="text/javascript" src="javascripts/jquery.mobilemenu.js"></script>
+	<script type="text/javascript" src="javascripts/jquery.infieldlabel.js"></script>
+	<!--script type="text/javascript" src="javascripts/jquery.echoslider.js"></script-->
+	<script type="text/javascript" src="javascripts/fluidapp.js"></script>
+	
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="images/favicon.png" />
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	
+	<link rel="stylesheet" href="ajax_mail/style.css">
+</head>
+<body>
+	<div id="page_wrapper">
+
+	<header>
+		<div class="container">
+			<nav>
+				<ul>
+					<li><a href="#home">Главная</a></li>
+					<li><a href="#screenshots">Скриншоты</a></li>
+					<li><a href="#demo">Демо</a></li>
+					<li><a href="#download">Скачать</a></li>
+					<li><a href="#faq">FAQ</a></li>
+					<li><a href="#contact">Контакты</a></li>
+				</ul>
+				<span class="arrow"></span>
+			</nav>
+		</div>
+	</header>
+
+	
+	<section class="container">
+		
+		<div id="app_info">
+
+			<a href="#home" class="logo">
+				<img src="images/light-logo.png" alt="JustBusTimes" />
+			</a>
+
+			<span class="tagline">Скрипт расписания общественного транспорта</span>
+			
+<p>JustBusTimes (JBT CMS) - это PHP скрипт для создания расписания движения автобусов, маршруток и другого общественного транспорта. Идеально подходит для городского или регионального сайта. Совмещает в себе карту расположения остановок и список остановок и список маршрутов. Имеет адаптивную верстку, благодаря чему хорошо смотрится как на компьютере, так и на экране мобильного телефона. Имеет удобную панель управления, позволяющую быстро вносить и редактировать расписание, находить и исправлять возможные ошибки. Расчитан под большие нагрузки и неприхотлив к хостингу.</p>
+<p>Код скрипта полностью открыт для изменения, прокомментирован и достаточно прост для понимания.</p>
+<p>Современный вид и продвинутый функционал! Пользователи буду довольны!</p>
+
+
+
+		</div>
+
+		<div id="pages">
+			<div class="top_shadow"></div>
+			
+			<div id="home" class="page">
+				
+				<img src="images/booth-logo.png" alt="" />
+				
+				<p><strong>Возможности скрипта:</strong></p>
+				<ul>
+					<li>Карта с расположением остановочных пунктов</li>
+					<li>Отображения схемы маршрута на карте</li>
+					<li>Виды транспорта: Автобус, Троллейбус, Трамвай</li>
+					<li>График движения: Будни/Выходные, Будни/Сб/Вс или любой другой</li>
+					<li>Затемнение времени ушедшего транспорта</li>
+					<li>Открытие последней просмотренной остановки при входе на сайт</li>
+					<li>Автоматическое открытие расписания на текущий день недели</li>
+					<li>Переносы рабочих и праздничных дней, поддержка сокращенных дней</li>
+					<li>Кэширование данных в браузере (localStorage) и на сервере</li>
+				</ul>
+				<p><strong>Возможности админки:</strong></p>
+				<ul>
+					<li>Возможность задавать для маршрута дополнительные &quot;подмаршруты&quot;</li>
+					<li>Возможность указать "синонимы" названия остановки, для упрощения поиска</li>
+					<li>Предупреждение об ошибках на многих этапах работы</li>
+					<li>Автоматическая прокладка трека маршрута по дороге и ручное редактирование</li>
+					<li>Короткая справка на каждой странице админки</li>
+				</ul>
+			</div>
+			
+			<div id="download" class="page">
+				
+				<h1>Скачать скрипт</h1>
+				
+				<strong>Требования к хостингу</strong>
+				<p>Для установки скрипта JustBusTimes CMS вам будет достаточно обычного, самого дешевого хостинга с Apache2 + PHP + MySQL. Также JustBusTimes CMS можно запустить под nginx.</p> 
+				<p>Скрипт практически не создает нагрузки на сервер. Главная страница полностью статична и пересоздается только при необходимости.</p>
+				
+				<strong>Установка</strong>
+				<p>Установка типичная. Распаковать файлы на хостинг. Создать базу данных и импортировать в нее дамп из файла mysql_demo.sql.gz. Затем прописать необходимые настройки в config.php (настройки подключения к MySQL и т.д.)</p>
+				<p>При установке на сервер под nginx необходимо прописать в конфиг nginx следующий код:</p>
+<code><pre>
+# ЧПУ для админки
+location /admin {
+	rewrite ^/admin/([a-zA-Z0-9_-]+)/$ /admin/index.php?command=$1;
+	rewrite ^/admin/$ /admin/index.php;
+}
+</pre></code><br />
+
+				<strong>Получить полную версию</strong>
+				<p>Полную и актуальную на сегодня версию (v.2.x) разработчик с радостью вам передаст за небольшое вознаграждение в размере 20$</p>
+
+				<p>Также рассмотрим предложения по интеграции скрипта в дизайн вашего сайта, доработке скрипта под ваши нужды, написание парсеров или набор расписания с фото</p>
+				
+			</div>
+
+			<div id="faq" class="page">
+				
+				<h1>Частые вопросы и ответы</h1>
+				
+				<strong id="faq-nomap">Не отображается карта.</strong>
+				<p>Скорее всего вам необходимо прописать Google API key для карт гугл. Прописывается он в config.php. Подробнее о получении Google API key можно почитать в интернете</p>
+
+				<strong id="faq-rediz">Как изменить дизайн сайта?</strong>
+				<p>Для изменений дизайна сайта рекомендуем использовать файл assets/extend.css. Пропишите там правила, перебивающие оригинальные из styles.css. Помните, что при редактировании styles.css есть риск потерять все изменения во время обновления CMS до новой верси.</p>
+
+				
+				<strong id="faq-adminfold">Как сменить папку admin?</strong>
+				<p>В скрипте предусмотрена возможность изменения папки панели администратора, что обезопасит ее от незваных гостей. К примеру, для переноса админки в admpanel необходимо:</p>
+				<ol>
+					<li>переименовать папку admin в admpanel</li>
+					<li>в файле .htaccess заменить все <i>admin</i> на <i>admpanel</i></li>
+					<li>в файле config.php строку <i>$admpath  = '/admin';</i> заменить на <i>$admpath  = '/admpanel;</i></li>
+				</ol>
+				
+				<strong id="faq-newplan">Что будет если я выберу другой график у автобуса с заполнынным описанием.</strong>
+				<p>Ничего непоправимого не произойдет и данные вы не потеряете. Если в новом графике больше пунктов, то недостающие будут пустыми. Если в новом графике меньше пунктов, то лишние будут скрыты, но останутся в базе.</p>
+				
+				<strong id="faq-newyear">В новогодние праздники некоторые автобусы ходят по другому графику. Как это сделать?</strong>
+				<p>Для начала вам необходимо создать новый график движения. Такой же как был у необходимого вам автобуса, только плюс еще один пункт - к примеру "НГ" (название на ваше усмотрение). Затем в разделе "Транспорт" 
+				у необходимого вам транспорта нужно выбрать этот график работы. В результате в разделе "Расписание" у тех автобусов появится дополнительное поле ввода графика на "НГ". На сайте оно будет выводится в отдельной вкладке.</p>
+				<p>Рекомендуем также зайти в раздел "Переносы дней", задать новый день "2017.12.31" и выбрать пункт графика для работы в этот день - "НГ". Данная настройка заставит сайт в выбранные день предупреждать о том,
+				что данный транспорт идет по другому графику и предлагать открыть вкладку с новым расписанием.</p>
+				<p>После завершения праздников, чтобы убрать ненужную вкладку "НГ" в расписании, необходимо переключить транспорт обратно на привычный график работы.</p>
+
+			</div>
+
+			<div id="screenshots" class="page">
+				
+				<h1>Скриншоты</h1>
+				
+				<p>Представляем вам несколько скриншотов JustBusTimes CMS.</p>
+				
+				<div class="screenshot_grid content_box">
+					
+					<div class="one_third">
+						<a href="images/screenshots/screen_1.png" class="fancybox" rel="group" title="Главная страница, PC версия"><img src="images/screenshots/screen_1_thumb.png" alt="" /></a>
+					</div>
+
+					<div class="one_third">
+						<a href="images/screenshots/iphone.png" class="fancybox" rel="group" title="Мобильный вид (на iPhone)"><img src="images/screenshots/iphone.png" alt="" /></a>
+					</div>
+
+					<div class="one_third column_last">
+						<a href="images/screenshots/icon_transp.png" class="fancybox" rel="group" title="Иконки вида транспорта"><img src="images/screenshots/icon_transp.png" alt="" /></a>
+					</div>
+					
+					<div class="one_third ">
+						<a href="images/screenshots/admin.png" class="fancybox" rel="group" title="Вид администраторской панели"><img src="images/screenshots/admin.png" alt="" /></a>
+					</div>
+
+					<div class="one_third ">
+						<a href="images/screenshots/ost_table.png" class="fancybox" rel="group" title="Аднные в таблице можно редактировать"><img src="images/screenshots/ost_table_thumb.png" alt="" /></a>
+					</div>
+					
+					<div class="one_third column_last">
+						<a href="images/screenshots/vk_app.png" class="fancybox" rel="group" title="Приложение для группы ВКонтакте"><img src="images/screenshots/vk_app_thumb.jpg" alt="" /></a>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+
+			<div id="demo" class="page">
+				<h1>Демо версия</h1>
+				<p>Демо-версия сайта: <a href="http://demo.busov.net/" target="_blank">http://demo.busov.net</a></p>
+				<p>Демо-версия панели администратора: <a href="http://demo.busov.net/admin/" target="_blank">http://demo.busov.net/admin/</a> (пароль: <strong>demo_pass</strong>)</p>
+			</div>
+
+
+			<div id="contact" class="page">
+				
+				<div id="page-wrapper">
+				  <h1>Отправить сообщение</h1>
+
+				  <div id="form-messages"></div>
+					
+					<form id="ajax-contact" method="post" action="ajax_mail/mailer.php">
+						<div class="field">
+							<label for="name">Ваше имя:</label>
+							<input type="text" id="name" name="name" required>
+						</div>
+
+						<div class="field">
+							<label for="email">Email:</label>
+							<input type="email" id="email" name="email" required>
+						</div>
+
+						<div class="field">
+							<label for="message">Сообщение:</label>
+							<textarea id="message" name="message" required></textarea>
+						</div>
+
+						<div class="field">
+							<button type="submit">Отправить</button>
+						</div>
+					</form>
+				</div>
+	
+
+	
+			</div>
+			
+			
+			
+			<div class="bottom_shadow"></div>
+		</div>
+		<!-- End Pages -->
+		
+		<div class="clear"></div>
+	</section>
+	
+	<!-- Start Footer -->
+	<footer class="container">
+	</footer>
+
+	
+	</div>
+
+
+	<script src="ajax_mail/app.js"></script>
+</body>
+</html>
